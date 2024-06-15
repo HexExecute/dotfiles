@@ -98,7 +98,7 @@
 
         "$mod, C, killactive"
         "$mod, V, togglefloating"
-        "$mod, F, fullscreen, 1"
+        "$mod, F, fullscreen"
       ];
       # TODO: posy cursor
 
