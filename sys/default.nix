@@ -5,8 +5,10 @@
 
     "${self}/sys/shell.nix"
     "${self}/sys/dm/gdm.nix"
+    # "${self}/user/wm/hyprland"
 
     "${self}/sys/pkg"
+    # "${self}/user/pkg"
     "${self}/sys/service"
 
     "${self}/sys/users/hex.nix"

@@ -1,5 +1,5 @@
 { self, ... }: {
-  home.sessionVariables.EDITOR = "hx";
+  # home.sessionVariables.EDITOR = "hx";
 
   imports = [
     "${self}/user/pkg/helix/languages.nix"

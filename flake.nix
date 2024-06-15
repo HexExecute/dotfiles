@@ -29,7 +29,7 @@
     homeConfigurations = {
       hex = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        specialArgs = { inherit inputs self; };
+        extraSpecialArgs = { inherit inputs self; };
 
         # inherit inputs;
         modules = [ 
