@@ -1,4 +1,7 @@
-{ userSettings, self, ... }: {
+{ userSettings, inputs, ... }:
+let
+  self = inputs.self;
+in {
   imports = [
     "${self}/user/pkg"
     "${self}/user/wm/hyprland"

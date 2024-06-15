@@ -1,4 +1,7 @@
-{ self, ... }: {
+{ inputs, ... }:
+let
+  self = inputs.self;
+in {
   imports = [
     "${self}/sys/service/gnome.nix"
     "${self}/sys/service/polkit.nix"
