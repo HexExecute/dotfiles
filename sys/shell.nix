@@ -1,3 +1,1 @@
-{ pkgs, ... }: {
-  environment.shells = with pkgs; [ nushell bash ];
-}
+{ pkgs, ... }: { environment.shells = with pkgs; [ nushell bash ]; }
