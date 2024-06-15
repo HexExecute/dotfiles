@@ -99,13 +99,14 @@
         ", $mod, F, maximize"
       ];
       # TODO: posy cursor
-    };
 
-    windowrule = [
-      "opacity 0.999 override, ^(firefox)$"
-    ];
-    windowrulev2 = [
-      "supressevent maximize, class:.*"
-    ];
+      windowrule = [
+        "opacity 0.999 override, ^(firefox)$"
+      ];
+
+      windowrulev2 = [
+        "supressevent maximize, class:.*"
+      ];
+    };
   };
 }
