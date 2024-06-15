@@ -1,12 +1,11 @@
-{ userSettings, self, ... }: {
+{ self, ... }: {
   imports = [
     "${self}/user/pkg"
     "${self}/user/wm/hyprland"
   ];
 
-  userSettings.username = "hex";
-  home.username = userSettings.username;
-  home.homeDirectory = "/home/${userSettings.username}";
+  home.username = "hex";
+  home.homeDirectory = "/home/hex";
   home.stateVersion = "24.05";
 
   programs.home-manager.enable = true;

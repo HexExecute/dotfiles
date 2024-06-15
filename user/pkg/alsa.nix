@@ -1,3 +1,3 @@
-{ userSettings, pkgs, ... }: {
-  users.users."${userSettings.username}".packages = with pkgs; [ alsa-utils ];
+{ pkgs, ... }: {
+  users.users.hex.packages = with pkgs; [ alsa-utils ];
 }
