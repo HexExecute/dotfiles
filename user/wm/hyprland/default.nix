@@ -87,7 +87,7 @@
       bind = [
         "$mod, T, exec, $terminal"
         "$mod, M, exit"
-        "$mod, E, $files"
+        "$mod, E, exec, $files"
         "$mod, R, exec, $menu"
         "$mod, P, pseudo"
 
@@ -98,7 +98,7 @@
 
         "$mod, C, killactive"
         "$mod, V, togglefloating"
-        "$mod, F, maximize"
+        "$mod, F, fullscreen, 1"
       ];
       # TODO: posy cursor
 
