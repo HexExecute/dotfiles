@@ -1,4 +1,6 @@
-{
+{ self, ... }: {
+  imports = [ "${self}/user/wm/hyprland/wofi.nix" ];
+
   wayland.windowManager.hyprland = {
     enable = true;
     systemd.enable = true;
