@@ -104,7 +104,7 @@
 
       windowrule = [ "opacity 0.999 override, ^(firefox)$" ];
 
-      windowrulev2 = [ "supressevent maximize, class:.*" ];
+      windowrulev2 = [ "suppressevent maximize, class:.*" ];
     };
   };
 }
