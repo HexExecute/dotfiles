@@ -2,7 +2,7 @@
   home.sessionVariables.EDITOR = "hx";
 
   imports = [
-    "${self}"/user/pkg/helix/languages.nix
+    "${self}/user/pkg/helix/languages.nix"
   ];
 
   programs.helix = {
