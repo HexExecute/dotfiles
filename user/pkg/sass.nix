@@ -1,3 +1,3 @@
 { pkgs, ... }: {
-  users.users.hex.packages = with pkgs; [ sass ];
+  home.packages = with pkgs; [ sass ];
 }

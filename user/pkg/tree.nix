@@ -1,3 +1,3 @@
 { pkgs, ... }: {
-  users.users.hex.packages = with pkgs; [ tree ];
+  home.packages = with pkgs; [ tree ];
 }

@@ -1,3 +1,3 @@
 { pkgs, ... }: {
-  users.users.hex.packages = with pkgs; [ kicad ];
+  home.packages = with pkgs; [ kicad ];
 }
