@@ -18,23 +18,23 @@
     nixosConfigurations = {
       nixos = lib.nixosSystem {
         inherit system;
-        # specialArgs = { inherit inputs; };
+        specialArgs = { inherit inputs; };
         inherit inputs;
         modules = [
           ./sys/default.nix
-          { _module.args = { inherit inputs; }; }
+          # { _module.args = { inherit inputs; }; }
          ];
       };
     };
     homeConfigurations = {
       hex = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        # specialArgs = { inherit inputs; };
+        specialArgs = { inherit inputs; };
 
         # inherit inputs;
         modules = [ 
           ./user/default.nix
-          { _module.args = { inherit inputs; }; }
+          # { _module.args = { inherit inputs; }; }
         ];
       };
     };
