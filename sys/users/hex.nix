@@ -3,30 +3,30 @@
     isNormalUser = true;
     description = "hex";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      # programming
-      helix
-      rustup
+    # packages = with pkgs; [
+      # # programming
+      # helix
+      # rustup
 
-      # terminal
-      wezterm
-      nushell
-      fastfetch
-      btop
-      git
-      wget
-      tree
-      sass
+      # # terminal
+      # wezterm
+      # nushell
+      # fastfetch
+      # btop
+      # git
+      # wget
+      # tree
+      # sass
 
-      # general
-      firefox
+      # # general
+      # firefox
 
-      # system
-      gnome.nautilus
-      gnome.gnome-control-center
-      # gnome.app-switcher
-      wofi
-    ];
+      # # system
+      # gnome.nautilus
+      # gnome.gnome-control-center
+      # # gnome.app-switcher
+      # wofi
+    # ];
     shell = pkgs.nushell;
   };
 }

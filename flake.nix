@@ -18,13 +18,13 @@
     nixosConfigurations = {
       nixos = lib.nixosSystem {
         inherit system;
-        modules = [ ./sys/mod.nix ];
+        modules = [ ./sys/default.nix ];
       };
     };
     homeConfigurations = {
       hex = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        modules = [ ./user/mod.nix ];
+        modules = [ ./user/default.nix ];
       };
     };
   };
