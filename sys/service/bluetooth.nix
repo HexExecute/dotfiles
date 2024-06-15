@@ -2,8 +2,9 @@
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
 
+  security.rtkit.enable = true; # security
+
   services.blueman.enable = true; # bluetooth
-  services.rtkit.enable = true; # security
   services.pipewire.wireplumber.extraConfig = {
     "monitor.bluez.properties" = {
       "bluez5.enable-sbc-xq" = true;
