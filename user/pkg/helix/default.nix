@@ -1,7 +1,4 @@
-{ inputs, ... }: 
-let
-  self = inputs.self;
-in {
+{ self, ... }: {
   home.sessionVariables.EDITOR = "hx";
 
   imports = [

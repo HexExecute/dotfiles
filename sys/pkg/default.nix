@@ -1,7 +1,4 @@
-{ inputs, ... }: 
-let
-  self = inputs.self;
-in {
+{ self, ... }: {
   imports = [
     "${self}/sys/pkg/gnome.nix"
     "${self}/sys/pkg/rustup.nix"

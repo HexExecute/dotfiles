@@ -1,7 +1,4 @@
-{ inputs, ... }:
-let
-  self = inputs.self;
-in {
+{ self, ... }: {
   imports = [
     "${self}/user/pkg/alsa.nix"
     "${self}/user/pkg/btop.nix"

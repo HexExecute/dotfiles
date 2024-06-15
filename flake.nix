@@ -18,7 +18,7 @@
     nixosConfigurations = {
       nixos = lib.nixosSystem {
         inherit system;
-        specialArgs = { inherit inputs; };
+        specialArgs = { inherit inputs self; };
         # inherit inputs;
         modules = [
           ./sys/default.nix
@@ -29,7 +29,7 @@
     homeConfigurations = {
       hex = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        specialArgs = { inherit inputs; };
+        specialArgs = { inherit inputs self; };
 
         # inherit inputs;
         modules = [ 

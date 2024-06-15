@@ -1,7 +1,4 @@
-{ inputs, ... }: 
-let
-  self = inputs.self;
-in {
+{ self, ... }: {
   imports = [
     "${self}/sys/hardware.nix"
     "${self}/sys/boot/grub.nix"
