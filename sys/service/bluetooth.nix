@@ -1,6 +1,6 @@
 {
   hardware.bluetooth.enable = true;
-  hardware.bluetooth.powerOnboot = true;
+  hardware.bluetooth.powerOnBoot = true;
 
   services.blueman.enable = true; # bluetooth
   services.rtkit.enable = true; # security
