@@ -4,6 +4,7 @@
     "${self}/user/wm/hyprland"
   ];
 
+  userSettings.username = "hex";
   home.username = userSettings.username;
   home.homeDirectory = "/home/${userSettings.username}";
   home.stateVersion = "24.05";
