@@ -21,7 +21,7 @@
         resize_on_border = true;
 
         allow_tearing = false;
-        
+
         layout = "dwindle";
       };
 
@@ -81,32 +81,28 @@
       };
 
       gestures.workspace_swipe = true;
-      
+
       bind = [
         "$mod, T, exec, $terminal"
-        ", $mod, M, exit"
-        ", $mod, E, $files"
-        ", $mod, R, exec, $menu"
-        ", $mod, P, pseudo"
+        "$mod, M, exit"
+        "$mod, E, $files"
+        "$mod, R, exec, $menu"
+        "$mod, P, pseudo"
 
-        ", $mod, H, movefocus, l"
-        ", $mod, J, movefocus, d"
-        ", $mod, K, movefocus, u"
-        ", $mod, L, movefocus, r"
+        "$mod, H, movefocus, l"
+        "$mod, J, movefocus, d"
+        "$mod, K, movefocus, u"
+        "$mod, L, movefocus, r"
 
-        ", $mod, C, killactive"
-        ", $mod, V, togglefloating"
-        ", $mod, F, maximize"
+        "$mod, C, killactive"
+        "$mod, V, togglefloating"
+        "$mod, F, maximize"
       ];
       # TODO: posy cursor
 
-      windowrule = [
-        "opacity 0.999 override, ^(firefox)$"
-      ];
+      windowrule = [ "opacity 0.999 override, ^(firefox)$" ];
 
-      windowrulev2 = [
-        "supressevent maximize, class:.*"
-      ];
+      windowrulev2 = [ "supressevent maximize, class:.*" ];
     };
   };
 }
