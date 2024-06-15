@@ -19,7 +19,7 @@
       nixos = lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs; };
-        inherit inputs;
+        # inherit inputs;
         modules = [
           ./sys/default.nix
           # { _module.args = { inherit inputs; }; }
