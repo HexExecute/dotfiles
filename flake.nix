@@ -20,15 +20,22 @@
         inherit system;
         # specialArgs = { inherit inputs; };
         inherit inputs;
-        modules = [ ./sys/default.nix ];
+        modules = [
+          ./sys/default.nix
+          { _module.args = { inherit inputs; }; }
+         ];
       };
     };
     homeConfigurations = {
       hex = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         # specialArgs = { inherit inputs; };
-        inherit inputs;
-        modules = [ ./user/default.nix ];
+
+        # inherit inputs;
+        modules = [ 
+          ./user/default.nix
+          { _module.args = { inherit inputs; }; }
+        ];
       };
     };
   };
