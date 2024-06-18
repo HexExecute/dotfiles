@@ -6,6 +6,7 @@
     "${self}/user/pkg/firefox"
     "${self}/user/pkg/git.nix"
     "${self}/user/pkg/helix"
+    "${self}/user/pkg/javascript.nix"
     "${self}/user/pkg/kicad.nix"
     "${self}/user/pkg/krita.nix"
     "${self}/user/pkg/nautilus.nix"
