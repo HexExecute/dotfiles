@@ -15,7 +15,7 @@
 
       # exec-once = [ "hyprpaper" ];
 
-      env = [ ''XCURSOR_THEME,"Adwaita"'' ];
+      env = [ "XCURSOR_THEME,Adwaita" ];
 
       general = {
         gaps_in = 5;
