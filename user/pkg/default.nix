@@ -11,6 +11,7 @@
     "${self}/user/pkg/krita.nix"
     "${self}/user/pkg/nautilus.nix"
     "${self}/user/pkg/sass.nix"
+    "${self}/user/pkg/swww.nix"
     "${self}/user/pkg/thunderbird.nix"
     "${self}/user/pkg/tree.nix"
     "${self}/user/pkg/typescript.nix"
