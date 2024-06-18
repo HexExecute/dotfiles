@@ -17,7 +17,7 @@
   # nix
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.gc.automatic = true; # garbage collector
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowUnfree = true; # unfree software
   system.stateVersion = "24.05";
 
   # networking
