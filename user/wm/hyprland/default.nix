@@ -13,7 +13,8 @@
 
       monitor = [ ", preferred, 1920x1200, 1.2" ];
 
-      # exec-once = [ "hyprpaper" ];
+      exec-once =
+        [ "swww-daemon; swww img ~/.dotfiles/assets/wallpaper/physics.jpg" ];
 
       env = [ "XCURSOR_THEME,Adwaita" ];
 
