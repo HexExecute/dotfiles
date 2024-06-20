@@ -3,6 +3,7 @@
     "${self}/user/pkg/alsa.nix"
     "${self}/user/pkg/btop.nix"
     "${self}/user/pkg/fastfetch.nix"
+    "${self}/user/pkg/findex.nix"
     "${self}/user/pkg/firefox"
     "${self}/user/pkg/git.nix"
     "${self}/user/pkg/helix"
