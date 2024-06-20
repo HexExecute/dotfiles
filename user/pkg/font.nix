@@ -1,1 +1,1 @@
-{ pkgs, ... }: { fonts.packages = with pkgs; [ noto-fonts jetbrains-mono ]; }
+{ pkgs, ... }: { home.packages = with pkgs; [ noto-fonts jetbrains-mono ]; }
