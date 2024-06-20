@@ -1,5 +1,7 @@
-{ self, ... }: {
+{ self, pkgs, ... }: {
   imports = [ "${self}/user/wm/hyprland/wofi.nix" ];
+
+  home.packages = with pkgs; [ xdg-desktop-portal-hyprland ];
 
   wayland.windowManager.hyprland = {
     enable = true;
