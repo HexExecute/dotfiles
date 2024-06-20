@@ -9,7 +9,8 @@
       "$mod" = "SUPER";
       "$terminal" = "[float;tile] wezterm start --always-new-process";
       "$files" = "nautilus";
-      "$menu" = "wofi --show drun";
+      # "$menu" = "wofi --show drun";
+      "$menu" = "echo 1 o> ~/.config/findex/toggle_file";
 
       monitor = [ ", preferred, 1920x1200, 1.2" ];
 
