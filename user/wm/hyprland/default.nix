@@ -16,8 +16,10 @@
 
       monitor = [ ", preferred, 1920x1200, 1.2" ];
 
-      exec-once =
-        [ "swww-daemon; swww img ~/.dotfiles/assets/wallpaper/physics.jpg" ];
+      exec-once = [
+        "swww-daemon; swww img ~/.dotfiles/assets/wallpaper/physics.jpg"
+        "findex-daemon"
+      ];
 
       env = [ "XCURSOR_THEME,Adwaita" ];
 

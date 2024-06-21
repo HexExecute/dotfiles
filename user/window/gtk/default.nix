@@ -5,4 +5,7 @@
     style.name = "gtk2";
   };
 
+  gtk = { enable = true; };
+
+  home.pointerCursor.gtk.enable = true;
 }
