@@ -21,39 +21,33 @@
 //   }),
 // });
 
-const top_bar = (monitor: number) => Widget.Window({
-  monitor,
-  name: `top_bar_${monitor}`,
-  anchor: ['top', 'left', 'right'],
-  exclusivity: 'exclusive',
-  child: Widget.CenterBox({
-    start_widget: Widget.Label({
-      hpack: 'center',
-      label: 'test'
-    })
-  })
-});
+import { bar } from "./widget/bar/mod";
 
 Utils.monitorFile(
   // directory that contains the scss files
   `${App.configDir}/style`,
-
-  // reload function
-  () => {
-    // main scss file
-    const scss = `${App.configDir}/style/style.scss`;
-
-    // target css file
-    const css = `/tmp/ags-style.css`;
-
-    // compile, reset, apply
-    Utils.exec(`sass ${scss} ${css}`);
-    App.resetCss();
-    App.applyCss(css);
-  },
+  refreshStyle
 );
+
+function refreshStyle() {
+
+  // main scss file
+  console.log("reloading style...");
+  const scss = `${App.configDir}/style/style.scss`;
+
+  // target css file
+  const css = `/tmp/ags-style.css`;
+
+  // compile, reset, apply
+  Utils.exec(`sass ${scss} ${css}`);
+  App.resetCss();
+  App.applyCss(css);
+  console.log("...style reloaded");
+}
+
+refreshStyle();
 
 App.config({
   configDir: "~/.dotfiles/assets/ags",
-  windows: [top_bar(0)],
+  windows: [bar(0)],
 });

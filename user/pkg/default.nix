@@ -13,6 +13,7 @@
     "${self}/user/pkg/krita.nix"
     "${self}/user/pkg/nautilus.nix"
     "${self}/user/pkg/sass.nix"
+    "${self}/user/pkg/screenshot.nix"
     "${self}/user/pkg/swww.nix"
     "${self}/user/pkg/thunderbird.nix"
     "${self}/user/pkg/tree.nix"

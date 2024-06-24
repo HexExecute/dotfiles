@@ -1,0 +1,39 @@
+@import "../theme";
+
+.bar {
+  background-color: rgba($surface, 0.8);
+  border-radius: 10px;
+
+  margin: 16px 16px 0px 16px;
+  min-height: 32px;
+}
+
+.workspaces {
+  margin-left: 4px;
+  /* background-color: #fff; */
+}
+
+.workspace_button {
+  transition: background-color 0.1s ease-in-out;
+
+  background-color: transparent;
+
+  border: solid 2px;
+  border-color: $primary;
+  border-radius: 2px;
+  
+  min-width: 20px;
+  min-height: 20px;
+}
+
+#workspace_0 {
+  border-radius: 10px 4px 4px 10px;
+}
+
+#workspace_3 {
+  border-radius: 4px 10px 10px 4px;
+}
+
+.circle_button .toggled {
+  background-color: $primary;
+}
