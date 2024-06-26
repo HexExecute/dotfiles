@@ -1,4 +1,4 @@
-{ self, pkgs, ... }: {
+{ self, config, pkgs, ... }: {
   imports = [ "${self}/user/wm/hyprland/wofi.nix" ];
 
   home.packages = with pkgs; [ xdg-desktop-portal-hyprland ];
@@ -14,7 +14,7 @@
       # "$menu" = "wofi --show drun";
       "$menu" = "echo 1 o> ~/.config/findex/toggle_file";
       "$screenshot" = ''
-        grim -g (slurp) ($"/home/hex/pictures/screenshots/" + (date now | format date "%Y_%m_%d_%H_%M_%S_screenshot.png")) | wl-copy'';
+        grim -g (slurp -b${config.theme.colors.scheme.dark.surface}CC -c#00000000) ($"/home/hex/pictures/screenshots/" + (date now | format date "%Y_%m_%d_%H_%M_%S_screenshot.png")) | wl-copy'';
 
       monitor = [ ", preferred, 1920x1200, 1.2" ];
 
@@ -116,7 +116,7 @@
       bindm = [ "$mod, mouse:272, movewindow" "$mod, mouse:273, resizewindow" ];
       # TODO: posy cursor
 
-      windowrule = [ "opacity 0.999 override, ^(firefox)$" "blur,^(slurp)$" ];
+      windowrule = [ "opacity 0.999 override, ^(firefox)$" ];
 
       windowrulev2 = [ "suppressevent maximize, class:.*" ];
     };
