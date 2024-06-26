@@ -7,7 +7,7 @@ export const workspaces = () => Widget.Box({
     class_name: "workspace_button",
     hpack: "center",
     vpack: "center",
-    onClicked: () => {
+    on_clicked: () => {
 
     }
   }))

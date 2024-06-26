@@ -24,6 +24,10 @@
   
   min-width: 20px;
   min-height: 20px;
+
+  &:active {
+    background-color: $primary;
+  }
 }
 
 #workspace_0 {
@@ -32,8 +36,4 @@
 
 #workspace_3 {
   border-radius: 4px 10px 10px 4px;
-}
-
-.circle_button .toggled {
-  background-color: $primary;
 }

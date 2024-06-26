@@ -8,7 +8,7 @@ export const bar = (monitor: number) => Widget.Window({
   exclusivity: 'exclusive',
   child: Widget.CenterBox({
     class_name: "bar",
-    startWidget: Widget.Box({
+    start_widget: Widget.Box({
       children: [workspaces()]
     })
   })
