@@ -1,1 +1,1 @@
-{ pkgs, ... }: { home.packages = with pkgs; [ grim slurp wl-copy ]; }
+{ pkgs, ... }: { home.packages = with pkgs; [ grim slurp wl-clipboard-rs ]; }
