@@ -1,6 +1,22 @@
-{ self, ...}: {
+{ config, ... }: {
   programs.wezterm = {
     enable = true;
-    extraConfig = builtins.readFile "${self}/user/pkg/wezterm/config/default.lua";
+    extraConfig = ''
+      local wezterm = require 'wezterm'
+
+      local config = wezterm.config_builder()
+
+      config.color_scheme = 'Catppuccin Mocha'
+      config.enable_tab_bar = false
+      config.window_background_opacity = 0.8
+
+      configs.colors = {
+        background = ${config.theme.colors.surface}
+      }
+
+      return config
+    '';
+
+    # builtins.readFile "${self}/user/pkg/wezterm/config/default.lua";
   };
 }
