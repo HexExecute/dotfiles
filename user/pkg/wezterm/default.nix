@@ -10,8 +10,8 @@
       config.enable_tab_bar = false
       config.window_background_opacity = 0.8
 
-      configs.colors = {
-        background = "${config.theme.colors.schemes.dark.surface}"
+      config.colors = {
+        background = '${config.theme.colors.schemes.dark.surface}'
       }
 
       return config
