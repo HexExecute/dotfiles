@@ -1,6 +1,5 @@
 { self, ... }: {
   imports = [
-    "${self}/user/pkg/ags.nix"
     "${self}/user/pkg/alsa.nix"
     "${self}/user/pkg/btop.nix"
     "${self}/user/pkg/fastfetch.nix"
@@ -16,6 +15,7 @@
     "${self}/user/pkg/sass.nix"
     "${self}/user/pkg/screenshot.nix"
     "${self}/user/pkg/swww.nix"
+    "${self}/user/pkg/theme.nix"
     "${self}/user/pkg/thunderbird.nix"
     "${self}/user/pkg/tree.nix"
     "${self}/user/pkg/typescript.nix"
