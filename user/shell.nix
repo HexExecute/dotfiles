@@ -1,8 +1,6 @@
 { config, ... }: {
   programs.nushell = {
     enable = true;
-    configFile.source =
-      "${config.home.homeDirectory}/.config/nushell/config.nu";
     extraConfig = ''
       let carapace_completer = {|spans|
       carapace $spans.0 nushell $spans | from json
