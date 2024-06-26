@@ -1,5 +1,5 @@
-{ self, config, ... }:
+{ self, ... }:
 let
   colorsJSON = builtins.readFile "${self}/assets/material3/radio.json";
   colors = builtins.fromJSON colorsJSON;
-in { config.theme.colors = colors; }
+in { options.theme.colors = colors; }
