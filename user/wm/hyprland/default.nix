@@ -14,7 +14,7 @@
       # "$menu" = "wofi --show drun";
       "$menu" = "echo 1 o> ~/.config/findex/toggle_file";
       "$screenshot" = ''
-        grim -g (slurp -b${config.theme.colors.scheme.dark.surface}CC -c#00000000) ($"/home/hex/pictures/screenshots/" + (date now | format date "%Y_%m_%d_%H_%M_%S_screenshot.png")) | wl-copy'';
+        grim -g (slurp -b${config.theme.colors.schemes.dark.surface}CC -c#00000000) ($"/home/hex/pictures/screenshots/" + (date now | format date "%Y_%m_%d_%H_%M_%S_screenshot.png")) | wl-copy'';
 
       monitor = [ ", preferred, 1920x1200, 1.2" ];
 
