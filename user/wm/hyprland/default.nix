@@ -100,7 +100,7 @@
         "$mod, M, exit"
         "$mod, E, exec, $files"
         "$mod, R, exec, $menu"
-        "$mod, S, exec, $screenshot"
+        "$, Print, exec, $screenshot"
         "$mod, P, pseudo"
 
         "$mod, H, movefocus, l"
@@ -116,7 +116,7 @@
       bindm = [ "$mod, mouse:272, movewindow" "$mod, mouse:273, resizewindow" ];
       # TODO: posy cursor
 
-      windowrule = [ "opacity 0.999 override, ^(firefox)$" ];
+      windowrule = [ "opacity 0.999 override, ^(firefox)$" "blur,^(slurp)$" ];
 
       windowrulev2 = [ "suppressevent maximize, class:.*" ];
     };
