@@ -100,7 +100,7 @@
         "$mod, M, exit"
         "$mod, E, exec, $files"
         "$mod, R, exec, $menu"
-        "$, Print, exec, $screenshot"
+        ", Print, exec, $screenshot"
         "$mod, P, pseudo"
 
         "$mod, H, movefocus, l"
