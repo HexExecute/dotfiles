@@ -49,7 +49,7 @@
         blur = {
           enabled = true;
           size = 12;
-          passes = 2;
+          passes = 1;
 
           # vibrancy = 0.1696;
           vibrancy = 0.2;
