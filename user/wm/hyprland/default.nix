@@ -52,7 +52,7 @@
           passes = 2;
 
           # vibrancy = 0.1696;
-          vibrancy = 0.5;
+          vibrancy = 0.2;
         };
       };
 
