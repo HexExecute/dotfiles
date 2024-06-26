@@ -1,5 +1,6 @@
 { self, ... }: {
-  imports = [ "${self}/user/pkg" "${self}/user/wm/hyprland" ];
+  imports =
+    [ "${self}/user/shell.nix" "${self}/user/pkg" "${self}/user/wm/hyprland" ];
 
   home.username = "hex";
   home.homeDirectory = "/home/hex";
