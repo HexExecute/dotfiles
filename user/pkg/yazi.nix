@@ -11,6 +11,6 @@
       };
       manager = { show_hidden = false; };
     };
-    theme = "";
+    # theme = {};
   };
 }
