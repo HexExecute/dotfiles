@@ -11,7 +11,8 @@
       config.window_background_opacity = 0.8
 
       config.colors = {
-        background = '${config.theme.colors.schemes.dark.surface}'
+        foreground = '${config.theme.colors.onSurface}'
+        background = '${config.theme.colors.surface}'
       }
 
       return config

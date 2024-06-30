@@ -4,7 +4,7 @@ let
   colors = builtins.fromJSON colorsJSON;
 in {
   options.theme.colors = pkgs.lib.mkOption {
-    default = colors;
+    default = colors.schemes.dark;
     description = "The color theme used by the system (material3).";
   };
 }
