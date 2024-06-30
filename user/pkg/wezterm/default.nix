@@ -11,7 +11,7 @@
       config.window_background_opacity = 0.8
 
       config.colors = {
-        foreground = '${config.theme.colors.onSurface}'
+        foreground = '${config.theme.colors.onSurface}',
         background = '${config.theme.colors.surface}'
       }
 
