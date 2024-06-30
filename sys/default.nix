@@ -1,10 +1,10 @@
 { self, ... }: {
   imports = [
     "${self}/sys/hardware.nix"
-    "${self}/sys/boot/grub.nix"
+    # "${self}/sys/boot/grub.nix"
 
     "${self}/sys/shell.nix"
-    "${self}/sys/dm/gdm.nix"
+    # "${self}/sys/dm/gdm.nix"
     # "${self}/user/wm/hyprland"
 
     "${self}/sys/pkg"
