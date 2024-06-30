@@ -10,6 +10,9 @@ export const bar = (monitor: number) => Widget.Window({
     class_name: "bar",
     start_widget: Widget.Box({
       children: [workspaces()]
+    }),
+    center_widget: Widget.Box({
+      children: []
     })
   })
 });

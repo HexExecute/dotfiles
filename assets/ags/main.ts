@@ -48,6 +48,5 @@ function refreshStyle() {
 refreshStyle();
 
 App.config({
-  configDir: "~/.dotfiles/assets/ags",
   windows: [bar(0)],
 });

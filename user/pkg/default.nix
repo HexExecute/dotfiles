@@ -7,6 +7,7 @@
     "${self}/user/pkg/firefox"
     "${self}/user/pkg/font.nix"
     "${self}/user/pkg/git.nix"
+    "${self}/user/pkg/gradience.nix"
     "${self}/user/pkg/helix"
     "${self}/user/pkg/javascript.nix"
     "${self}/user/pkg/kicad.nix"
