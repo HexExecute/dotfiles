@@ -1,8 +1,6 @@
 { self, config, lib, pkgs, modulesPath, ... }: {
-  imports = [
-    (modulesPath + "/installer/scan/not-detected.nix")
-    "${self}/sys/boot/default.nix"
-  ];
+  imports =
+    [ (modulesPath + "/installer/scan/not-detected.nix") "${self}/sys/boot" ];
 
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/ebba5dd8-7183-4456-9d9a-77f5b85371de";
