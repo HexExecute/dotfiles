@@ -2,6 +2,7 @@
   imports = [
     "${self}/user/pkg/alsa.nix"
     "${self}/user/pkg/btop.nix"
+    "${self}/user/pkg/calculator.nix"
     "${self}/user/pkg/fastfetch.nix"
     "${self}/user/pkg/findex.nix"
     "${self}/user/pkg/firefox"
