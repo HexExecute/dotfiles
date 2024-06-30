@@ -1,4 +1,4 @@
-{ self }: {
+{ self, ... }: {
   imports = [ "${self}/sys/boot/grub.nix" "${self}/sys/boot/dm/gdm.nix" ];
 
   boot = {
