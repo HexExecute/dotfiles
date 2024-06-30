@@ -17,7 +17,6 @@
     "${self}/user/pkg/sass.nix"
     "${self}/user/pkg/screenshot.nix"
     "${self}/user/pkg/swww.nix"
-    "${self}/user/pkg/theme.nix"
     "${self}/user/pkg/thunderbird.nix"
     "${self}/user/pkg/tree.nix"
     "${self}/user/pkg/typescript.nix"
