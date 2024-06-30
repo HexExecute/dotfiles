@@ -1,6 +1,7 @@
 { self, ... }: {
   imports = [
     "${self}/user/pkg/alsa.nix"
+    "${self}/user/pkg/brave.nix"
     "${self}/user/pkg/btop.nix"
     "${self}/user/pkg/calculator.nix"
     "${self}/user/pkg/fastfetch.nix"
