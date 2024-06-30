@@ -4,6 +4,7 @@
     # "${self}/sys/boot/grub.nix"
 
     "${self}/sys/shell.nix"
+    "${self}/sys/wm/hyprland.nix"
     # "${self}/sys/dm/gdm.nix"
     # "${self}/user/wm/hyprland"
 
