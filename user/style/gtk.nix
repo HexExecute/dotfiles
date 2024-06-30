@@ -5,13 +5,13 @@
     style.name = "gtk2";
   };
 
-  gtk = { enable = true; };
-  home.pointerCursor = {
-    enable = true;
-    name = "Adwaita";
-    size = 24;
-    gtk.enable = true;
-  };
+  gtk.enable = true;
+  # home.pointerCursor = {
+  #   enable = true;
+  #   name = "Adwaita";
+  #   size = 24;
+  #   gtk.enable = true;
+  # };
 
   home.file.".config/gtk-4.0/gtk.css".text = ''
     @define-color accent_color ${config.theme.colors.primary};
