@@ -29,15 +29,15 @@
           ./sys/default.nix
           ({ pkgs, ... }: {
             nixpkgs.overlays = [ fenix.overlays.default ];
-            environment.systemPackages = with pkgs; [
-              (fenix.complete.withComponents [
+            environment.systemPackages = [
+              (pkgs.fenix.complete.withComponents [
                 "cargo"
                 "clippy"
                 "rust-src"
                 "rustc"
                 "rustfmt"
               ])
-              rust-analyzer-nightly
+              pkgs.rust-analyzer-nightly
             ];
           })
         ];
