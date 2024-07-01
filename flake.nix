@@ -8,35 +8,43 @@
       url = "github:nix-community/home-manager/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    fenix = {
+      url = "github:nix-community/fenix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: 
-  let lib = nixpkgs.lib;
-    system = "x86_64-linux";
-    pkgs = nixpkgs.legacyPackages.${system};
-  in {
-    nixosConfigurations = {
-      nixos = lib.nixosSystem {
+  outputs = { self, nixpkgs, home-manager, fenix, ... }@inputs:
+    let
+      lib = nixpkgs.lib;
+      system = "x86_64-linux";
+      pkgs = nixpkgs.legacyPackages.${system};
+      fenix_module = ({ pkgs, ... }: {
+        nixpkgs.overlays = [ fenix.overlays.default ];
+        environment.systemPackages = with pkgs; [
+          (fenix.complete.withComponents [
+            "cargo"
+            "clippy"
+            "rust-src"
+            "rustc"
+            "rustfmt"
+          ])
+          rust-analyzer-nightly
+        ];
+      });
+    in {
+      nixosConfigurations.nixos = lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs self; };
-        # inherit inputs;
-        modules = [
-          ./sys/default.nix
-          # { _module.args = { inherit inputs; }; }
-         ];
+        modules = [ ./sys/default.nix fenix_module ];
       };
-    };
-    homeConfigurations = {
-      hex = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-        extraSpecialArgs = { inherit inputs self; };
+      homeConfigurations = {
+        hex = home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+          extraSpecialArgs = { inherit inputs self; };
 
-        # inherit inputs;
-        modules = [ 
-          ./user/default.nix
-          # { _module.args = { inherit inputs; }; }
-        ];
+          modules = [ ./user/default.nix fenix_module ];
+        };
       };
     };
-  };
 }
