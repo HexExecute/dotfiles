@@ -14,7 +14,7 @@
       auto-format = true;
     }
     {
-      name = "hex";
+      name = "rust";
       auto-format = true;
     }
   ];
