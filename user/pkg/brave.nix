@@ -1,7 +1,6 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [ brave ];
-  xdg.desktopEntries.brave = {
-    name = "brave";
+  xdg.desktopEntries.brave-browser = {
     exec = "brave --ozone-platform=wayland %U";
   };
 }
