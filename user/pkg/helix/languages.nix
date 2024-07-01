@@ -13,5 +13,9 @@
       name = "typescript";
       auto-format = true;
     }
+    {
+      name = "hex";
+      auto-format = true;
+    }
   ];
 }
