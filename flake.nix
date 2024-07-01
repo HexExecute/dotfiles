@@ -19,31 +19,33 @@
       lib = nixpkgs.lib;
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
-      fenix_module = ({ pkgs, ... }: {
-        nixpkgs.overlays = [ fenix.overlays.default ];
-        environment.systemPackages = with pkgs; [
-          (fenix.complete.withComponents [
-            "cargo"
-            "clippy"
-            "rust-src"
-            "rustc"
-            "rustfmt"
-          ])
-          rust-analyzer-nightly
-        ];
-      });
     in {
       nixosConfigurations.nixos = lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs self; };
-        modules = [ ./sys/default.nix fenix_module ];
+        modules = [
+          ./sys/default.nix
+          ({ pkgs, ... }: {
+            nixpkgs.overlays = [ fenix.overlays.default ];
+            environment.systemPackages = with pkgs; [
+              (fenix.complete.withComponents [
+                "cargo"
+                "clippy"
+                "rust-src"
+                "rustc"
+                "rustfmt"
+              ])
+              rust-analyzer-nightly
+            ];
+          })
+        ];
       };
       homeConfigurations = {
         hex = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           extraSpecialArgs = { inherit inputs self; };
 
-          modules = [ ./user/default.nix fenix_module ];
+          modules = [ ./user/default.nix ];
         };
       };
     };
