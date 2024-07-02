@@ -1,4 +1,6 @@
-{ config, ... }: {
+{ config, pkgs, ... }: {
+  home.programs = with pkgs; [ adw-gtk3 ];
+
   qt = {
     enable = true;
     platformTheme.name = "gtk2";

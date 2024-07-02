@@ -1,1 +1,1 @@
-{ pkgs, ... }: { home.packages = with pkgs; [ steam cartridges ]; }
+{ pkgs, ... }: { home.packages = with pkgs; [ steam adwsteamgtk cartridges ]; }
