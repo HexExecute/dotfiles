@@ -33,8 +33,8 @@
     @define-color error_fg_color ${config.theme.colors.onError};
     @define-color window_bg_color ${config.theme.colors.surface};
     @define-color window_fg_color ${config.theme.colors.onSurface};
-    @define-color view_bg_color ${config.theme.colors.surfaceVariant};
-    @define-color view_fg_color ${config.theme.colors.onSurfaceVariant};
+    @define-color view_bg_color ${config.theme.colors.surface};
+    @define-color view_fg_color ${config.theme.colors.onSurface};
     @define-color headerbar_bg_color rgba(209, 188, 255, 0.08);
     @define-color headerbar_fg_color #e8def8;
     @define-color headerbar_border_color rgba(230, 225, 229, 0.8);
@@ -95,12 +95,12 @@
     @define-color dark_4 #241f31;
     @define-color dark_5 #000000;
     placessidebar {
-      background-color: ${config.theme.colors.surfaceVariant};
-      color: ${config.theme.colors.onSurfaceVariant};
+      background-color: ${config.theme.colors.surfaceBright};
+      color: ${config.theme.colors.onSurfaceBright};
     }
     .navigation-sidebar {
-      background-color: ${config.theme.colors.surfaceVariant};
-      color: ${config.theme.colors.onSurfaceVariant};
+      background-color: ${config.theme.colors.surfaceBright};
+      color: ${config.theme.colors.onSurfaceBright};
     }
   '';
 }
