@@ -7,6 +7,7 @@
     "${self}/user/pkg/fastfetch.nix"
     "${self}/user/pkg/findex.nix"
     "${self}/user/pkg/firefox"
+    "${self}/user/pkg/fragments.nix"
     "${self}/user/pkg/font.nix"
     "${self}/user/pkg/git.nix"
     "${self}/user/pkg/gradience.nix"
