@@ -21,7 +21,13 @@
       toolchain = pkgs.rust-bin.fromRustupToolchainFile ./toolchain.toml;
     in {
       devShells.${system}.default = pkgs.mkShell {
-        packages = [ toolchain pkgs.rust-analyzer-unwrapped ];
+        packages = [
+          toolchain
+          pkgs.rust-analyzer-unwrapped
+
+          pkgs.pkg-config
+          pkgs.openssl
+        ];
         RUST_SRC_PATH = "${toolchain}/lib/rustlib/src/rust/library";
       };
       nixosConfigurations.nixos = lib.nixosSystem {
