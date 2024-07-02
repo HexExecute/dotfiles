@@ -19,7 +19,7 @@
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
     in {
-      package.x86_64-linux.default =
+      packages.x86_64-linux.default =
         fenix.packages.x86_64-linux.minimal.toolchain;
       nixosConfigurations.nixos = lib.nixosSystem {
         inherit system;
@@ -49,5 +49,6 @@
           modules = [ ./user/default.nix ];
         };
       };
+      devShells = { };
     };
 }
