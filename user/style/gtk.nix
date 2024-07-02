@@ -25,6 +25,7 @@
     @define-color success_color #efb7c7;
     @define-color success_bg_color #633b48;
     @define-color success_fg_color #ffd9e4;
+    @define-color sidebar ${config.theme.colors.surface};
     @define-color warning_color #ccc2dc;
     @define-color warning_bg_color #4a4458;
     @define-color warning_fg_color #e8def8;
