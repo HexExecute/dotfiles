@@ -95,11 +95,11 @@
     @define-color dark_4 #241f31;
     @define-color dark_5 #000000;
     placessidebar {
-      background-color: ${config.theme.colors.surfaceBright};
+      background-color: ${config.theme.colors.surfaceContainer};
       color: ${config.theme.colors.onSurface};
     }
     .navigation-sidebar {
-      background-color: ${config.theme.colors.surfaceBright};
+      background-color: ${config.theme.colors.surfaceContainer};
       color: ${config.theme.colors.onSurface};
     }
   '';
