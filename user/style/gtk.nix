@@ -1,5 +1,5 @@
 { config, pkgs, ... }: {
-  home.programs = with pkgs; [ adw-gtk3 ];
+  home.packages = with pkgs; [ adw-gtk3 ];
 
   qt = {
     enable = true;
