@@ -102,5 +102,9 @@
       background-color: ${config.theme.colors.surfaceContainer};
       color: ${config.theme.colors.onSurface};
     }
+    .top-bar {
+      background: ${config.theme.colors.surfaceContainerHigh};
+      color: ${config.theme.colors.onSurface};
+    }
   '';
 }
