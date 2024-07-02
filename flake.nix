@@ -27,6 +27,7 @@
 
           pkgs.pkg-config
           pkgs.openssl
+          pkgs.pango
         ];
         RUST_SRC_PATH = "${toolchain}/lib/rustlib/src/rust/library";
       };
