@@ -9,6 +9,7 @@
     "${self}/user/pkg/firefox"
     "${self}/user/pkg/fragments.nix"
     "${self}/user/pkg/font.nix"
+    "${self}/user/pkg/games.nix"
     "${self}/user/pkg/git.nix"
     "${self}/user/pkg/gradience.nix"
     "${self}/user/pkg/helix"
