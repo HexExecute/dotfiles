@@ -29,6 +29,7 @@
           pkgs.openssl
           pkgs.pango
           pkgs.gdk-pixbuf
+          pkgs.atk
         ];
         RUST_SRC_PATH = "${toolchain}/lib/rustlib/src/rust/library";
       };
