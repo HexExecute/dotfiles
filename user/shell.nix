@@ -45,7 +45,7 @@
     direnv = {
       enable = true;
       enableNushellIntegration = true;
-      nix-direnv = true;
+      nix-direnv.enable = true;
     };
   };
 }
