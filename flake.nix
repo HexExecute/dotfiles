@@ -8,39 +8,18 @@
       url = "github:nix-community/home-manager/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    fenix = {
-      url = "github:nix-community/fenix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { self, nixpkgs, home-manager, fenix, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, ... }@inputs:
     let
       lib = nixpkgs.lib;
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
     in {
-      packages.x86_64-linux.default =
-        fenix.packages.x86_64-linux.minimal.toolchain;
       nixosConfigurations.nixos = lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs self; };
-        modules = [
-          ./sys/default.nix
-          ({ pkgs, ... }: {
-            nixpkgs.overlays = [ fenix.overlays.default ];
-            environment.systemPackages = [
-              (pkgs.fenix.complete.withComponents [
-                "cargo"
-                "clippy"
-                "rust-src"
-                "rustc"
-                "rustfmt"
-              ])
-              pkgs.rust-analyzer-nightly
-            ];
-          })
-        ];
+        modules = [ ./sys/default.nix ];
       };
       homeConfigurations = {
         hex = home-manager.lib.homeManagerConfiguration {
@@ -50,6 +29,5 @@
           modules = [ ./user/default.nix ];
         };
       };
-
     };
 }
