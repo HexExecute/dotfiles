@@ -96,9 +96,11 @@
     @define-color dark_5 #000000;
     placessidebar {
       background-color: ${config.theme.colors.surfaceVariant};
+      color: ${config.theme.colors.onSurfaceVariant};
     }
     .navigation-sidebar {
       background-color: ${config.theme.colors.surfaceVariant};
+      color: ${config.theme.colors.onSurfaceVariant};
     }
   '';
 }
