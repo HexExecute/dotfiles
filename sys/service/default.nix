@@ -1,5 +1,6 @@
 { self, ... }: {
   imports = [
+    "${self}/sys/service/fprintd.nix"
     "${self}/sys/service/gnome.nix"
     "${self}/sys/service/polkit.nix"
     "${self}/sys/service/upower.nix"
