@@ -33,6 +33,7 @@
           pkgs.gtk3
         ];
         RUST_SRC_PATH = "${toolchain}/lib/rustlib/src/rust/library";
+        env = { SHELL = "/run/current-system/sw/bin/nu"; };
       };
       nixosConfigurations.nixos = lib.nixosSystem {
         inherit system;
