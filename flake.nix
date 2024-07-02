@@ -30,6 +30,7 @@
           pkgs.pango
           pkgs.gdk-pixbuf
           pkgs.atk
+          pkgs.gtk3
         ];
         RUST_SRC_PATH = "${toolchain}/lib/rustlib/src/rust/library";
       };
