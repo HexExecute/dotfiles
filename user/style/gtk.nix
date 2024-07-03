@@ -107,16 +107,4 @@
       color: ${config.theme.colors.onSurface};
     }
   '';
-
-  environment.etc = {
-    "xdg/gtk-2.0/gtkrc".text = "gtk-error-bell=0";
-    "xdg/gtk-3.0/settings.ini".text = ''
-      [Settings]
-      gtk-error-bell=false
-    '';
-    "xdg/gtk-4.0/settings.ini".text = ''
-      [Settings]
-      gtk-error-bell=false
-    '';
-  };
 }
