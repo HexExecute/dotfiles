@@ -12,5 +12,7 @@
     video-trimmer
     wike
     clapper
+    denaro
+    dissent
   ];
 }
