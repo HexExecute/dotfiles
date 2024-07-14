@@ -15,7 +15,7 @@
     "${self}/user/pkg/javascript.nix"
     "${self}/user/pkg/kicad.nix"
     "${self}/user/pkg/krita.nix"
-    "${self}/user/pkg/prismlauncher.nix"
+    "${self}/user/pkg/minecraft.nix"
     "${self}/user/pkg/sass.nix"
     "${self}/user/pkg/screenshot.nix"
     "${self}/user/pkg/swww.nix"
