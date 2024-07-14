@@ -11,7 +11,6 @@
     authenticator
     video-trimmer
     wike
-    decibels
     clapper
   ];
 }
