@@ -17,5 +17,9 @@
       name = "rust";
       auto-format = true;
     }
+    {
+      name = "java";
+      auto-format = true;
+    }
   ];
 }
