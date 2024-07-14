@@ -13,6 +13,5 @@
     wike
     clapper
     denaro
-    dissent
   ];
 }
