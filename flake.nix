@@ -7,10 +7,9 @@
       url = "github:nix-community/home-manager/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    rust-overlay.url = "github:oxalica/rust-overlay";
   };
 
-  outputs = { self, nixpkgs, home-manager, rust-overlay, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, ... }@inputs:
     let
       lib = nixpkgs.lib;
       system = "x86_64-linux";
@@ -18,23 +17,7 @@
         inherit system;
         overlays = [ rust-overlay.overlays.default ];
       };
-      toolchain = pkgs.rust-bin.fromRustupToolchainFile ./toolchain.toml;
     in {
-      devShells.${system}.default = pkgs.mkShell {
-        packages = [
-          toolchain
-          pkgs.rust-analyzer-unwrapped
-
-          pkgs.pkg-config
-          pkgs.openssl
-          pkgs.pango
-          pkgs.gdk-pixbuf
-          pkgs.atk
-          pkgs.gtk3
-        ];
-        shell = "/run/current-system/sw/bin/nu";
-        RUST_SRC_PATH = "${toolchain}/lib/rustlib/src/rust/library";
-      };
       nixosConfigurations.nixos = lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs self; };
