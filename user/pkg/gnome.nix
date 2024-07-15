@@ -13,5 +13,6 @@
     wike
     clapper
     denaro
+    parabolic
   ];
 }
