@@ -236,15 +236,15 @@
         --adwaita-headerbar-bg-color: ${config.theme.colors.surfaceContainerHigh};
         --adwaita-headerbar-fg-color: ${config.theme.colors.onSurface};
         --adwaita-headerbar-border-color: #ffffff;
-        --adwaita-headerbar-backdrop-color: #242424;
+        --adwaita-headerbar-backdrop-color: ${config.theme.colors.surfaceContainerHigh};
         --adwaita-headerbar-shade-color: rgba(0, 0, 0, 0.36);
         --adwaita-card-bg-color: rgba(255, 255, 255, 0.08);
         --adwaita-card-fg-color: #ffffff;
         --adwaita-card-shade-color: rgba(0, 0, 0, 0.36);
-        --adwaita-dialog-bg-color: #383838;
-        --adwaita-dialog-fg-color: #ffffff;
-        --adwaita-popover-bg-color: #383838;
-        --adwaita-popover-fg-color: #ffffff;
+        --adwaita-dialog-bg-color: ${config.theme.colors.surfaceContainer};
+        --adwaita-dialog-fg-color: ${config.theme.colors.onSurface};
+        --adwaita-popover-bg-color: ${config.theme.colors.surfaceContainer};
+        --adwaita-popover-fg-color: ${config.theme.colors.onSurface};
         --adwaita-popover-shader-color: rgba(0, 0, 0, 0.36);
         --adwaita-shade-color: rgba(0, 0, 0, 0.36);
         --adwaita-scrollbar-outline-color: rgba(0, 0, 0, 0.5); }
