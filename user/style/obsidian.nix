@@ -169,6 +169,7 @@
 
     body {
       --background-primary: ${config.theme.colors.surface};
+      --backgorund-secondary: ${config.theme.colors.surfaceContainer};
       --canvas-background: ${config.theme.colors.surface};
       --modal-background: ${config.theme.colors.surface};
       --ribbon-background: ${config.theme.colors.surfaceContainer};
