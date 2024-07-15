@@ -14,6 +14,5 @@
     clapper
     denaro
     parabolic
-    eyedropper
   ];
 }
