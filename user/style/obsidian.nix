@@ -423,7 +423,7 @@
           body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux .titlebar-button-container.mod-right .titlebar-button::after,
           body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button::after,
           body.adwaita-mod-linux-only.mod-linux .titlebar-button-container.mod-right .titlebar-button::after {
-            content: \'\';
+            content: "";
             background-color: currentColor;
             width: 16px;
             height: 16px;
@@ -488,7 +488,7 @@
         body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux .modal-close-button:before,
         body.adwaita-mod-always .modal-close-button:before,
         body.adwaita-mod-linux-only.mod-linux .modal-close-button:before {
-          content: \'\';
+          content: "";
           display: block;
           width: 16px;
           height: 16px;
@@ -653,7 +653,7 @@
       body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .sidebar-toggle-button.mod-left .clickable-icon::after,
       body.adwaita-icons-always .sidebar-toggle-button.mod-left .clickable-icon::after,
       body.adwaita-icons-linux-only.mod-linux .sidebar-toggle-button.mod-left .clickable-icon::after {
-        content: \'\';
+        content: "";
         background-color: currentColor !important;
         -webkit-mask-image: var(--adwaita-icon-sidebar-show-symbolic);
         mask-image: var(--adwaita-icon-sidebar-show-symbolic);
@@ -667,7 +667,7 @@
       body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .sidebar-toggle-button.mod-right .clickable-icon::after,
       body.adwaita-icons-always .sidebar-toggle-button.mod-right .clickable-icon::after,
       body.adwaita-icons-linux-only.mod-linux .sidebar-toggle-button.mod-right .clickable-icon::after {
-        content: \'\';
+        content: "";
         background-color: currentColor !important;
         -webkit-mask-image: var(--adwaita-icon-sidebar-show-right-symbolic);
         mask-image: var(--adwaita-icon-sidebar-show-right-symbolic);
@@ -681,7 +681,7 @@
       body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .workspace-tab-header-new-tab .clickable-icon::after,
       body.adwaita-icons-always .workspace-tab-header-new-tab .clickable-icon::after,
       body.adwaita-icons-linux-only.mod-linux .workspace-tab-header-new-tab .clickable-icon::after {
-        content: \'\';
+        content: "";
         background-color: currentColor !important;
         -webkit-mask-image: var(--adwaita-icon-tab-new-symbolic);
         mask-image: var(--adwaita-icon-tab-new-symbolic);
@@ -695,7 +695,7 @@
       body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .workspace-tab-header-tab-list .clickable-icon::after,
       body.adwaita-icons-always .workspace-tab-header-tab-list .clickable-icon::after,
       body.adwaita-icons-linux-only.mod-linux .workspace-tab-header-tab-list .clickable-icon::after {
-        content: \'\';
+        content: "";
         background-color: currentColor !important;
         -webkit-mask-image: var(--adwaita-icon-go-down-symbolic);
         mask-image: var(--adwaita-icon-go-down-symbolic);
@@ -709,7 +709,7 @@
       body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .workspace-tab-header-inner-close-button::after,
       body.adwaita-icons-always .workspace-tab-header-inner-close-button::after,
       body.adwaita-icons-linux-only.mod-linux .workspace-tab-header-inner-close-button::after {
-        content: \'\';
+        content: "";
         background-color: currentColor !important;
         -webkit-mask-image: var(--adwaita-icon-window-close-symbolic);
         mask-image: var(--adwaita-icon-window-close-symbolic);
@@ -723,7 +723,7 @@
       body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .workspace-tab-header[data-type="file-explorer"] .workspace-tab-header-inner-icon::after,
       body.adwaita-icons-always .workspace-tab-header[data-type="file-explorer"] .workspace-tab-header-inner-icon::after,
       body.adwaita-icons-linux-only.mod-linux .workspace-tab-header[data-type="file-explorer"] .workspace-tab-header-inner-icon::after {
-        content: \'\';
+        content: "";
         background-color: currentColor !important;
         -webkit-mask-image: var(--adwaita-icon-folder-visiting-symbolic);
         mask-image: var(--adwaita-icon-folder-visiting-symbolic);
@@ -737,7 +737,7 @@
       body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .workspace-tab-header[data-type="search"] .workspace-tab-header-inner-icon::after,
       body.adwaita-icons-always .workspace-tab-header[data-type="search"] .workspace-tab-header-inner-icon::after,
       body.adwaita-icons-linux-only.mod-linux .workspace-tab-header[data-type="search"] .workspace-tab-header-inner-icon::after {
-        content: \'\';
+        content: "";
         background-color: currentColor !important;
         -webkit-mask-image: var(--adwaita-icon-folder-saved-search-symbolic);
         mask-image: var(--adwaita-icon-folder-saved-search-symbolic);
