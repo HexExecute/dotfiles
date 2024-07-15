@@ -169,6 +169,9 @@
 
     body {
       --canvas-background: ${config.theme.colors.surface};
+      --modal-background: ${config.theme.colors.surface};
+      --ribbon-background: ${config.theme.colors.surface};
+      --ribbon-background-collapsed: ${config.theme.colors.surfaceContainer};
       --adwaita-blue-1: #99c1f1;
       --adwaita-blue-2: #62a0ea;
       --adwaita-blue-3: #3584e4;
