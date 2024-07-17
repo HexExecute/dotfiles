@@ -27,4 +27,9 @@
     "${self}/user/pkg/wezterm"
     "${self}/user/pkg/yazi.nix"
   ];
+
+  xdg.mimeApps = {
+    enable = true;
+    defaultApplications = { "inode/directory" = "org.gnome.Nautilus.desktop"; };
+  };
 }

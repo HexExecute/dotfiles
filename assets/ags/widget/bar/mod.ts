@@ -1,4 +1,6 @@
 import { workspaces } from "./component/workspaces";
+import { time } from "./component/time";
+import { batteryLabel } from "./component/battery";
 
 export const bar = (monitor: number) => Widget.Window({
   monitor,
@@ -12,7 +14,12 @@ export const bar = (monitor: number) => Widget.Window({
       children: [workspaces()]
     }),
     center_widget: Widget.Box({
-      children: []
+      children: [time()]
+    }),
+    end_widget: Widget.Box({
+      hpack: "end",
+      spacing: 6,
+      children: [batteryLabel()]
     })
   })
 });
