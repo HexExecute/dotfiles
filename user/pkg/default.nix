@@ -13,6 +13,7 @@
     "${self}/user/pkg/gnome.nix"
     "${self}/user/pkg/gradience.nix"
     "${self}/user/pkg/helix"
+    "${self}/user/pkg/hid.nix"
     "${self}/user/pkg/javascript.nix"
     "${self}/user/pkg/kicad.nix"
     "${self}/user/pkg/krita.nix"
