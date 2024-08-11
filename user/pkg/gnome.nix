@@ -14,5 +14,6 @@
     clapper
     denaro
     parabolic
+    rnote
   ];
 }
