@@ -4,6 +4,7 @@
     "${self}/user/pkg/brave.nix"
     "${self}/user/pkg/btop.nix"
     "${self}/user/pkg/colorpicker.nix"
+    "${self}/user/pkg/docker.nix"
     "${self}/user/pkg/fastfetch.nix"
     "${self}/user/pkg/findex.nix"
     "${self}/user/pkg/firefox"
