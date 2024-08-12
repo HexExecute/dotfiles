@@ -15,6 +15,6 @@
     denaro
     parabolic
     rnote
-    gnome.cheese
+    snapshot
   ];
 }
