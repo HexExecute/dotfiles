@@ -16,5 +16,6 @@
     parabolic
     rnote
     snapshot
+    gnome.gnome-clocks
   ];
 }
