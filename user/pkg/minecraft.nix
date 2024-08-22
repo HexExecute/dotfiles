@@ -1,5 +1,3 @@
-{ pkgs, ... }:
-let unstable = import <nixos-unstable> { };
-in {
-  home.packages = with pkgs; [ prismlauncher unstable.modrinth-app ferium ];
+{ pkgs, ... }: {
+  home.packages = with pkgs; [ prismlauncher modrinth-app ferium ];
 }
