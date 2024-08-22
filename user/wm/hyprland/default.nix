@@ -130,8 +130,10 @@
 
       windowrule = [ "opacity 0.999 override, ^(firefox)$" ];
 
-      windowrulev2 =
-        [ "suppressevent maximize, class:.*" "float,class:^(floating)$" ];
+      windowrulev2 = [
+        "suppressevent maximize, class:.*"
+        "center, floating:1, class:floating"
+      ];
     };
   };
 }
