@@ -16,6 +16,8 @@
     xwayland.enable = true;
     settings = {
       "$mod" = "SUPER";
+      "$floating_terminal" =
+        "[float;tile] wezterm start --class floating --always-new-process";
       "$terminal" = "[float;tile] wezterm start --always-new-process";
       "$files" = "nautilus";
       # "$menu" = "wofi --show drun";
@@ -105,6 +107,7 @@
       gestures.workspace_swipe = true;
 
       bind = [
+        "$mod, Q, exec, $floating_terminal"
         "$mod, T, exec, $terminal"
         "$mod, M, exit"
         "$mod, E, exec, $files"
@@ -127,7 +130,8 @@
 
       windowrule = [ "opacity 0.999 override, ^(firefox)$" ];
 
-      windowrulev2 = [ "suppressevent maximize, class:.*" ];
+      windowrulev2 =
+        [ "suppressevent maximize, class:.*" "float,class:^(floating)$" ];
     };
   };
 }
