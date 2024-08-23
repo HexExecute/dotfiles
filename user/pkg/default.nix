@@ -10,7 +10,6 @@
     "${self}/user/pkg/fastfetch.nix"
     "${self}/user/pkg/findex.nix"
     "${self}/user/pkg/firefox"
-    "${self}/user/pkg/flatpak.nix"
     "${self}/user/pkg/font.nix"
     "${self}/user/pkg/games.nix"
     "${self}/user/pkg/git.nix"
