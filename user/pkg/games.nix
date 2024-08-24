@@ -2,5 +2,5 @@
   home.packages = with pkgs; [ steam adwsteamgtk cartridges ];
 
   # roblox via sober
-  services.flatpak.packages = [{ appId = ""; }];
+  # services.flatpak.packages = [{ appId = ""; }];
 }
