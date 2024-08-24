@@ -3,6 +3,7 @@
     "${self}/user/pkg/alsa.nix"
     "${self}/user/pkg/appimage.nix"
     "${self}/user/pkg/content.nix"
+    "${self}/user/pkg/bottles.nix"
     "${self}/user/pkg/brave.nix"
     "${self}/user/pkg/btop.nix"
     "${self}/user/pkg/colorpicker.nix"
