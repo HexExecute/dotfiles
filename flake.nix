@@ -26,7 +26,7 @@
           inherit pkgs;
           extraSpecialArgs = { inherit inputs self; };
 
-          modules = [ nix-flatpak.nixosModules.nix-flatpak ./user/default.nix ];
+          modules = [ ./user/default.nix ];
         };
       };
     };
