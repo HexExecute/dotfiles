@@ -7,9 +7,10 @@
       url = "github:nix-community/home-manager/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-flatpak.url = "github:gmodena/nix-flatpak";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, nix-flatpak, ... }@inputs:
     let
       lib = nixpkgs.lib;
       system = "x86_64-linux";
@@ -25,7 +26,7 @@
           inherit pkgs;
           extraSpecialArgs = { inherit inputs self; };
 
-          modules = [ ./user/default.nix ];
+          modules = [ nix-flatpak.nixosModules.nix-flatpak ./user/default.nix ];
         };
       };
     };
