@@ -17,5 +17,6 @@
     rnote
     snapshot
     gnome.gnome-clocks
+    pika-backup
   ];
 }
