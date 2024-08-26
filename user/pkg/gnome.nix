@@ -19,5 +19,6 @@
     gnome.gnome-clocks
     pika-backup
     gnome.gnome-weather
+    papers
   ];
 }
