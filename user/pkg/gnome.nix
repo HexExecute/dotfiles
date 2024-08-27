@@ -1,4 +1,6 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+let unstable = import <nixpkgs-unstable> { config = { allowUnfree = true; }; };
+in {
   home.packages = with pkgs; [
     gnome.gnome-calculator
     errands
@@ -14,7 +16,7 @@
     clapper
     denaro
     parabolic
-    rnote
+    unstable.rnote
     snapshot
     gnome.gnome-clocks
     pika-backup
