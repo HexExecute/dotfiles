@@ -20,5 +20,6 @@
     pika-backup
     gnome.gnome-weather
     papers
+    apostrophe
   ];
 }
