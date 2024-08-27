@@ -1,1 +1,0 @@
-{ xserver.wacom.enable = true; }
