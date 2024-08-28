@@ -1,5 +1,5 @@
 { pkgs, ... }:
-let unstable = import <nixpkgs-unstable> { config = { allowUnfree = true; }; };
+let unstable = import <nixpkgs-unstable> { config.allowUnfree = true; };
 in {
   home.packages = with pkgs; [
     gnome.gnome-calculator
