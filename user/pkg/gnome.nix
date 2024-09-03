@@ -23,5 +23,6 @@ in {
     gnome.gnome-weather
     papers
     apostrophe
+    unstable.decibels
   ];
 }
