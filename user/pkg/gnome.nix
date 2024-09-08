@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-let unstable = import <nixpkgs-unstable> { config.allowUnfree = true; };
-in {
+{ pkgs, unstable, ... }: {
   home.packages = with pkgs; [
     gnome.gnome-calculator
     errands
@@ -9,7 +7,7 @@ in {
     emblem
     dialect
     impression
-    amberol
+    unstable.gapless
     authenticator
     video-trimmer
     wike
@@ -23,6 +21,5 @@ in {
     gnome.gnome-weather
     papers
     apostrophe
-    unstable.decibels
   ];
 }
