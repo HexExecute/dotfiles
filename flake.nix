@@ -27,8 +27,10 @@
       homeConfigurations = {
         hex = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          inherit unstable;
-          extraSpecialArgs = { inherit inputs self; };
+          extraSpecialArgs = {
+            inherit inputs self;
+            inherit unstable;
+          };
 
           modules = [ ./user/default.nix ];
         };
