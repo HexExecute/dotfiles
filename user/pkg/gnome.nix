@@ -21,5 +21,6 @@
     gnome.gnome-weather
     papers
     apostrophe
+    unstable.alpaca
   ];
 }
