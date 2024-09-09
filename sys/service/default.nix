@@ -9,5 +9,6 @@
     "${self}/sys/service/pipewire.nix"
     "${self}/sys/service/tablet.nix"
     "${self}/sys/service/printing.nix"
+    "${self}/sys/service/tlp.nix"
   ];
 }
