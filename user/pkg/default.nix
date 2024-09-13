@@ -13,6 +13,7 @@
     "${self}/user/pkg/firefox"
     "${self}/user/pkg/font.nix"
     "${self}/user/pkg/games.nix"
+    "${self}/user/pkg/geogebra.nix"
     "${self}/user/pkg/gh.nix"
     "${self}/user/pkg/git.nix"
     "${self}/user/pkg/gnome.nix"
