@@ -11,7 +11,8 @@
     authenticator
     video-trimmer
     wike
-    clapper
+    unstable.showtime
+    unstable.decibels
     denaro
     parabolic
     unstable.rnote
@@ -19,8 +20,12 @@
     gnome.gnome-clocks
     pika-backup
     gnome.gnome-weather
-    papers
+    foliate
     apostrophe
     unstable.alpaca
+    easyeffects
+    resources
+    unstable.memorado
+    aviator
   ];
 }
