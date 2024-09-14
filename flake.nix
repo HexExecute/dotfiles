@@ -3,10 +3,7 @@
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-24.05";
-    unstablepkgs = {
-      url = "github:NixOS/nixpkgs/nixos-unstable";
-      config.allowUnfree = true;
-    };
+    unstablepkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -20,7 +17,10 @@
       lib = nixpkgs.lib;
       system = "x86_64-linux";
       pkgs = import nixpkgs { inherit system; };
-      unstable = import unstablepkgs { inherit system; };
+      unstable = import unstablepkgs {
+        inherit system;
+        config.allowUnfree = true;
+      };
     in {
       nixosConfigurations.nixos = lib.nixosSystem {
         inherit system;
