@@ -27,5 +27,6 @@
     resources
     unstable.memorado
     aviator
+    impression
   ];
 }
