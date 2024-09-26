@@ -27,6 +27,7 @@
     "${self}/user/pkg/minecraft.nix"
     "${self}/user/pkg/obs.nix"
     "${self}/user/pkg/obsidian.nix"
+    "${self}/user/pkg/rstudio.nix"
     "${self}/user/pkg/sass.nix"
     "${self}/user/pkg/screenshot.nix"
     "${self}/user/pkg/swww.nix"
