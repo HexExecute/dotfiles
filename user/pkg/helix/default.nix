@@ -11,6 +11,9 @@
       options = {
         default-bg = config.theme.colors.surface;
         default-fg = config.theme.colors.onSurface;
+        recolor = true;
+        recoler-lightcolor = config.theme.colors.surface;
+        recolor-keephue = true;
       };
     };
 
