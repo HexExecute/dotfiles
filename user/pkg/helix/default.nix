@@ -9,8 +9,8 @@
     zathura = {
       enable = true;
       options = {
-        default_bg = config.theme.colors.surface;
-        default_fg = config.theme.colors.onSurface;
+        default-bg = config.theme.colors.surface;
+        default-fg = config.theme.colors.onSurface;
       };
     };
 
