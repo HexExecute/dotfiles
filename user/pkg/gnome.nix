@@ -28,5 +28,6 @@
     unstable.memorado
     aviator
     impression
+    hieroglyphic
   ];
 }
