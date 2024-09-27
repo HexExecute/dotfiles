@@ -53,6 +53,11 @@
         name = "java";
         auto-format = true;
       }
+      {
+        name = "latex";
+        language-servers = [{ name = "texlab"; }];
+        auto-format = true;
+      }
     ];
   };
 }
