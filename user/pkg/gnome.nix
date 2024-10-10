@@ -26,7 +26,6 @@
     easyeffects
     resources
     unstable.memorado
-    aviator
     impression
     hieroglyphic
   ];

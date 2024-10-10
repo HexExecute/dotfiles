@@ -22,6 +22,7 @@
     "${self}/user/pkg/hid.nix"
     "${self}/user/pkg/intellij.nix"
     "${self}/user/pkg/javascript.nix"
+    "${self}/user/pkg/kdenlive.nix"
     "${self}/user/pkg/kicad.nix"
     "${self}/user/pkg/krita.nix"
     "${self}/user/pkg/minecraft.nix"
