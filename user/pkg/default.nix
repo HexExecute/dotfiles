@@ -18,6 +18,7 @@
     "${self}/user/pkg/git.nix"
     "${self}/user/pkg/gnome.nix"
     "${self}/user/pkg/gradience.nix"
+    "${self}/user/pkg/heif.nix"
     "${self}/user/pkg/helix"
     "${self}/user/pkg/hid.nix"
     "${self}/user/pkg/intellij.nix"
