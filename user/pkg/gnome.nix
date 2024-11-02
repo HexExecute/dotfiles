@@ -19,7 +19,7 @@
     snapshot
     gnome.gnome-clocks
     pika-backup
-    gnome.gnome-weather
+    unstable.gnome.gnome-weather
     foliate
     apostrophe
     unstable.alpaca
