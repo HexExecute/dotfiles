@@ -25,7 +25,7 @@
       # "$screenshot" = ''
       # grim -g (slurp -b${config.theme.colors.surface}CC -c#00000000) ($"/home/hex/pictures/screenshots/" + (date now | format date "%Y_%m_%d_%H_%M_%S_screenshot.png")) | wl-copy'';
       "$screenshot" = ''
-        grim -g "$(slurp -b${config.theme.colors.surface}CC -c#00000000 -d)" - | wl-copy -t image/png'';
+        grim -o "$(slurp -b${config.theme.colors.surface}CC -c#00000000 -d)" - | wl-copy -t image/png'';
 
       monitor = [ ", preferred, 1920x1200, 1.0" ];
 
