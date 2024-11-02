@@ -114,7 +114,7 @@
         "$mod, M, exit"
         "$mod, E, exec, $files"
         "$mod, R, exec, $menu"
-        "$mod&Shift_L, S, exec, $screenshot"
+        "$mod, S, exec, $screenshot"
         "$mod, P, pseudo"
 
         "$mod, H, movefocus, l"
