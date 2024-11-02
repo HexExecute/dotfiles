@@ -28,5 +28,6 @@
     unstable.memorado
     impression
     hieroglyphic
+    gnome.gnome-calendar
   ];
 }
