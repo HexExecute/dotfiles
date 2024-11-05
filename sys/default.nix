@@ -59,5 +59,7 @@
   services.xserver = {
     layout = "us";
     xkbVariant = "";
+    autoRepeatDelay = 200;
+    autoRepeatInterval = 50;
   };
 }
