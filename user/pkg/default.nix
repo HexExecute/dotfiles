@@ -36,6 +36,7 @@
     "${self}/user/pkg/screenshot.nix"
     "${self}/user/pkg/swww.nix"
     "${self}/user/pkg/thunderbird.nix"
+    "${self}/user/pkg/todoist.nix"
     "${self}/user/pkg/tree.nix"
     "${self}/user/pkg/typescript.nix"
     "${self}/user/pkg/wezterm"
