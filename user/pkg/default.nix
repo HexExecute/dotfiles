@@ -35,6 +35,7 @@
     "${self}/user/pkg/rstudio.nix"
     "${self}/user/pkg/sass.nix"
     "${self}/user/pkg/screenshot.nix"
+    "${self}/user/pkg/siril.nix"
     "${self}/user/pkg/swww.nix"
     "${self}/user/pkg/thunderbird.nix"
     "${self}/user/pkg/tree.nix"
