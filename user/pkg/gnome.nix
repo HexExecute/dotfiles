@@ -29,5 +29,6 @@
     impression
     hieroglyphic
     gnome.gnome-calendar
+    gnome-maps
   ];
 }
