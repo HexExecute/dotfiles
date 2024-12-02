@@ -1,52 +1,29 @@
-// const time = Variable('', {
-//   poll: [1000, function() {
-//     return Date().toString();
-//   }],
-// });
+import Gdk from "gi://Gdk";
+import type Gtk from "gi://Gtk?version=3.0";
 
-// const Bar = (monitor: number) => Widget.Window({
-//   monitor,
-//   name: `bar${monitor}`,
-//   anchor: ['top', 'left', 'right'],
-//   exclusivity: 'exclusive',
-//   child: Widget.CenterBox({
-//     start_widget: Widget.Label({
-//       hpack: 'center',
-//       label: 'Welcome to AGS!',
-//     }),
-//     end_widget: Widget.Label({
-//       hpack: 'center',
-//       label: time.bind(),
-//     }),
-//   }),
-// });
+import { VolumePopup } from "osd-popup/osd-popup.js";
+import { Bar } from "./bar/bar.js";
+// import { config, readConfig } from "./lib/settings.js";
+// import { Quicksettings } from "./quicksettings/quicksettings.js";
 
-import { bar } from "./widget/bar/mod";
-
-Utils.monitorFile(
-  // directory that contains the scss files
-  `${App.configDir}/style`,
-  refreshStyle
-);
-
-function refreshStyle() {
-
-  // main scss file
-  console.log("reloading style...");
-  const scss = `${App.configDir}/style/style.scss`;
-
-  // target css file
-  const css = `/tmp/ags-style.css`;
-
-  // compile, reset, apply
-  Utils.exec(`sass ${scss} ${css}`);
-  App.resetCss();
-  App.applyCss(css);
-  console.log("...style reloaded");
+function forMonitors(widget: (monitor: number) => Gtk.Window) {
+  const n = Gdk.Display.get_default()?.get_n_monitors() || 1;
+  return Array.from({ length: n }, (_, i) => i).flatMap(widget);
 }
 
-refreshStyle();
+export function main(dest: string): void {
+  // readConfig();
+  App.config({
+    style: `${dest}/style.css`,
+    windows: () => {
+      const windows = [...forMonitors(Bar)];
 
-App.config({
-  windows: [bar(0)],
-});
+      // if (config.popups?.volumePopup?.enable) {
+      //   windows.push(VolumePopup());
+      // }
+
+      return windows;
+    },
+    maxStreamVolume: 1.1,
+  });
+}
