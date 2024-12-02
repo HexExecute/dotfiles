@@ -19,7 +19,7 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.gc.automatic = true; # garbage collector
   nixpkgs.config.allowUnfree = true; # unfree software
-  system.stateVersion = "24.05";
+  system.stateVersion = "24.11";
 
   # networking
   networking.hostName = "nixos";
