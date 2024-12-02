@@ -1,1 +1,1 @@
-{ pkgs, ... }: { home.packages = with pkgs; [ noto-fonts jetbrains-mono ]; }
+{ pkgs, ... }: { fonts.fontconfig.enable = true; home.packages = with pkgs; [ noto-fonts jetbrains-mono ]; }

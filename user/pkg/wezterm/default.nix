@@ -9,6 +9,7 @@
       config.color_scheme = 'Catppuccin Mocha'
       config.enable_tab_bar = false
       config.window_background_opacity = 0.8
+	  config.front_end = "WebGpu"
 
       config.colors = {
         foreground = '${config.theme.colors.onSurface}',

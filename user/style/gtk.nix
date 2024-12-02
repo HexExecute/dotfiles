@@ -9,10 +9,10 @@
 
   gtk = {
     enable = true;
-    theme = {
-      name = "adw-gtk3";
-      package = pkgs.adw-gtk3;
-    };
+    # theme = {
+    #   name = "adw-gtk3";
+    #   package = pkgs.adw-gtk3;
+    # };
   };
   # home.pointerCursor = {
   #   enable = true;
