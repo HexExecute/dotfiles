@@ -25,7 +25,13 @@
       nixosConfigurations.nixos = lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs self; };
-        modules = [ ./sys/default.nix ];
+        modules = [
+          ./sys/default.nix
+          {
+            nixpkgs.config.permittedInsecurePackages =
+              [ "dotnet-runtime-6.0.36" ];
+          }
+        ];
       };
       homeConfigurations = {
         hex = home-manager.lib.homeManagerConfiguration {
