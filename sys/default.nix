@@ -57,8 +57,10 @@
 
   # x11 keymap
   services.xserver = {
-    layout = "us";
-    xkbVariant = "";
+    xkb = {
+      layout = "us";
+      variant = "";
+    };
     autoRepeatDelay = 200;
     autoRepeatInterval = 50;
   };
