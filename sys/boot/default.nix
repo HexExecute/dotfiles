@@ -12,6 +12,7 @@
       kernelModules = [ ];
     };
     kernelModules = [ "kvm-amd" ];
+    blacklistedKernelModules = [ "usbserial" ];
     extraModulePackages = [ ];
   };
 }
