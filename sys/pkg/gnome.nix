@@ -18,6 +18,9 @@
       });
     })
   ];
+
+  environment.sessionVariables = { GSK_RENDERER = "vulkan"; };
+
   nixpkgs.config.allowAliases = false;
   nixpkgs.config.allowUnfree = true;
 
