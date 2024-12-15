@@ -9,10 +9,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-flatpak.url = "github:gmodena/nix-flatpak";
+    zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
-  outputs =
-    { self, nixpkgs, unstablepkgs, home-manager, nix-flatpak, ... }@inputs:
+  outputs = { self, nixpkgs, unstablepkgs, home-manager, nix-flatpak
+    , zen-browser, ... }@inputs:
     let
       lib = nixpkgs.lib;
       system = "x86_64-linux";
