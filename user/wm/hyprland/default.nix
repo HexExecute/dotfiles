@@ -16,8 +16,8 @@
     xwayland.enable = true;
     settings = {
       "$mod" = "SUPER";
-      "$floating_terminal" =
-        "[float;tile] wezterm start --class floating --always-new-process";
+      "$floating_terminal" = "[float;tile] ghostty";
+      # "[float;tile] wezterm start --class floating --always-new-process";
       "$terminal" = "[float;tile] wezterm start --always-new-process";
       "$files" = "nautilus";
       # "$menu" = "wofi --show drun";
