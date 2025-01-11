@@ -1,1 +1,1 @@
-{ pkgs, ... }: { home.programs = with pkgs; [ ghostty ]; }
+{ pkgs, ... }: { home.packages = with pkgs; [ ghostty ]; }
