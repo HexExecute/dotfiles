@@ -16,6 +16,7 @@
     "${self}/user/pkg/games.nix"
     "${self}/user/pkg/geogebra.nix"
     "${self}/user/pkg/gh.nix"
+    "${self}/user/pkg/ghostty.nix"
     "${self}/user/pkg/git.nix"
     "${self}/user/pkg/gnome.nix"
     "${self}/user/pkg/gradience.nix"
