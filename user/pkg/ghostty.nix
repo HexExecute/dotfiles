@@ -1,1 +1,1 @@
-{ ... }: { programs.ghostty = { enable = true; }; }
+{ pkgs, ... }: { home.packages = with pkgs; [ ghostty ]; }
