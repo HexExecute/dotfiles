@@ -31,5 +31,6 @@
     gnome.gnome-calendar
     gnome-maps
     loupe
+    hyprnome
   ];
 }
