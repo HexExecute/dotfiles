@@ -21,7 +21,7 @@
     pika-backup
     # unstable.gnome-weather
     mousam
-    graphs
+    gnome-graphs
     foliate
     apostrophe
     unstable.alpaca
