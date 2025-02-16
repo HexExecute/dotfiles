@@ -1,3 +1,4 @@
-{ pkgs, ... }: {
-  home.packages = with pkgs; [ kicad ];
+{ pkgs, ... }:
+{
+  # home.packages = with pkgs; [ kicad ];
 }
