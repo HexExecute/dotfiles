@@ -23,10 +23,9 @@
     mousam
     foliate
     apostrophe
-    unstable.alpaca
+    alpaca
     easyeffects
     resources
-    unstable.memorado
     impression
     hieroglyphic
     gnome.gnome-calendar
