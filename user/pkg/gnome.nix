@@ -21,7 +21,7 @@
     pika-backup
     # unstable.gnome-weather
     mousam
-    foliate
+    unstable.foliate
     apostrophe
     alpaca
     easyeffects
