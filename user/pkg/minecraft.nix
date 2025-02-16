@@ -1,3 +1,1 @@
-{ pkgs, ... }: {
-  home.packages = with pkgs; [ prismlauncher modrinth-app ferium ];
-}
+{ pkgs, ... }: { home.packages = with pkgs; [ prismlauncher ]; }
