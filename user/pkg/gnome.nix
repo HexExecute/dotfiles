@@ -16,7 +16,6 @@
     gst
     gst_all_1.gst-libav
     gst_all_1.gstreamer
-    gstreamer-libav
     unstable.decibels
     denaro
     parabolic
