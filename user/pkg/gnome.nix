@@ -12,7 +12,11 @@
     video-trimmer
     wike
     unstable.showtime
-    x264
+    ffmpeg
+    gst-plugins-base
+    gst-plugins-good
+    gst-plugins-ugly
+    gstreamer-libav
     unstable.decibels
     denaro
     parabolic
