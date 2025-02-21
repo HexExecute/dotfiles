@@ -13,9 +13,9 @@
     wike
     unstable.showtime
     ffmpeg
-    gst-plugins-base
-    gst-plugins-good
-    gst-plugins-ugly
+    gst
+    gst_all_1.gst-libav
+    gst_all_1.gstreamer
     gstreamer-libav
     unstable.decibels
     denaro
