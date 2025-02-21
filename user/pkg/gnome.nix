@@ -12,6 +12,7 @@
     video-trimmer
     wike
     unstable.showtime
+    openh264
     unstable.decibels
     denaro
     parabolic
