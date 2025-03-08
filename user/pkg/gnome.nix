@@ -37,5 +37,6 @@
     loupe
     hyprnome
     exhibit
+    gnome-solanum
   ];
 }
