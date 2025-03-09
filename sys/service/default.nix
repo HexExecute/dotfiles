@@ -12,5 +12,6 @@
     "${self}/sys/service/printing.nix"
     "${self}/sys/service/tlp.nix"
     "${self}/sys/service/usbmuxd.nix"
+    "${self}/sys/service/via.nix"
   ];
 }
