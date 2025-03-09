@@ -40,6 +40,7 @@
     "${self}/user/pkg/thunderbird.nix"
     "${self}/user/pkg/tree.nix"
     "${self}/user/pkg/typescript.nix"
+    "${self}/user/pkg/via.nix"
     "${self}/user/pkg/wezterm"
     "${self}/user/pkg/yazi.nix"
   ];
