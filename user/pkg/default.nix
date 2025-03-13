@@ -32,6 +32,7 @@
     "${self}/user/pkg/obs.nix"
     "${self}/user/pkg/obsidian.nix"
     "${self}/user/pkg/planify.nix"
+    "${self}/user/pkg/python.nix"
     "${self}/user/pkg/rstudio.nix"
     "${self}/user/pkg/sass.nix"
     "${self}/user/pkg/screenshot.nix"
