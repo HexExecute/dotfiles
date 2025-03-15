@@ -1,4 +1,4 @@
 { pkgs, ... }: {
   fonts.fontconfig.enable = true;
-  home.packages = with pkgs; [ noto-fonts jetbrains-mono iosevka google-fonts ];
+  home.packages = with pkgs; [ noto-fonts iosevka google-fonts ];
 }
