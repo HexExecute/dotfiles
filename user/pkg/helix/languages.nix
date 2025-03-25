@@ -31,7 +31,7 @@
     #   };
     # };
 
-    language-server.texlab.config.forward_search = {
+    language-servers.texlab.config.forward_search = {
       executable = "zathura";
       args = ["--syntex-forward" "%l:1:%f" "%p"];
       on_save = true;
