@@ -31,7 +31,7 @@
     #   };
     # };
 
-    language-servers.texlab.config.forward_search = {
+    language-server.texlab.config.forward_search = {
       executable = "zathura";
       args = ["--syntex-forward" "%l:1:%f" "%p"];
       on_save = true;
@@ -66,7 +66,7 @@
         file-types = [ "tex" ];
         roots = [ ];
         comment-token = "%";
-        language-server = "texlab";
+        language-servers = [ "texlab" ];
         # config.texlab.build.onSave = true;
         indent = {
           tab-width = 2;
