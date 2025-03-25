@@ -31,6 +31,12 @@
     #   };
     # };
 
+    language-server.texlab.config.forward_search = {
+      executable = "zathura";
+      args = ["--syntex-forward" "%l:1:%f" "%p"];
+      on_save = true;
+    };
+
     language = [
       {
         name = "nix";
@@ -61,7 +67,7 @@
         roots = [ ];
         comment-token = "%";
         language-server = "texlab";
-        config.texlab.build.onSave = true;
+        # config.texlab.build.onSave = true;
         indent = {
           tab-width = 2;
           unit = "	";
