@@ -3,7 +3,7 @@
 
   imports = [ "${self}/user/pkg/helix/languages.nix" ];
 
-  home.packages = with pkgs; [ texlab tectonic texlivePackages.latexmk ];
+  home.packages = with pkgs; [ texlab tectonic texliveFull ];
 
   programs = {
     zathura = {
