@@ -1,35 +1,35 @@
 { pkgs, ... }: {
   programs.helix.languages = {
-    language-server.texlab.config.texlab = {
-      chktex = {
-        on-open-and-save = true;
-        on-edit = true;
-      };
-      forward_search = {
-        executable = "zathura";
-        args = [ "--synctex-forward" "%l:%c:%f" "%p" ];
-      };
-      build = {
-        aux-directory = "build";
-        log-directory = "build";
-        pdf-directory = "build";
+    # language-server.texlab.config.texlab = {
+    #   chktex = {
+    #     on-open-and-save = true;
+    #     on-edit = true;
+    #   };
+    #   forward_search = {
+    #     executable = "zathura";
+    #     args = [ "--synctex-forward" "%l:%c:%f" "%p" ];
+    #   };
+    #   build = {
+    #     aux-directory = "build";
+    #     log-directory = "build";
+    #     pdf-directory = "build";
 
-        forward-search-after = true;
-        on-save = true;
+    #     forward-search-after = true;
+    #     on-save = true;
 
-        executable = "tectonic";
+    #     executable = "tectonic";
 
-        args = [
-          "-X"
-          "compile"
-          "--synctex"
-          "--keep-logs"
-          "--keep-intermediates"
-          "--outdir=build"
-          "%f"
-        ];
-      };
-    };
+    #     args = [
+    #       "-X"
+    #       "compile"
+    #       "--synctex"
+    #       "--keep-logs"
+    #       "--keep-intermediates"
+    #       "--outdir=build"
+    #       "%f"
+    #     ];
+    #   };
+    # };
 
     language = [
       {
@@ -55,6 +55,17 @@
       }
       {
         name = "latex";
+        scope = "source.tex";
+        injection-regex = "tex";
+        file-types = [ "tex" ];
+        roots = [ ];
+        comment-token = "%";
+        language-server = "texlab";
+        config.texlab.build.onSave = true;
+        indent = {
+          tab-width = 2;
+          unit = "	";
+        };
         auto-format = true;
       }
     ];
