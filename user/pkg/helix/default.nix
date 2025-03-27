@@ -29,8 +29,8 @@
       };
       themes = {
         catppuccin-mocha-transparent = {
-          inherits = "catppuccin_mocha";
-          ui.background = { };
+          "inherits" = "catppuccin_mocha";
+          "ui.background" = { };
         };
       };
     };
