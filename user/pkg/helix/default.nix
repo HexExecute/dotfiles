@@ -20,7 +20,7 @@
     helix = {
       enable = true;
       settings = {
-        theme = "catppuccin_mocha_transparent";
+        theme = "catppuccin-mocha-transparent";
         editor.cursor-shape = {
           normal = "block";
           insert = "bar";
@@ -29,7 +29,7 @@
       };
       themes = {
         catppuccin-mocha-transparent = {
-          inherits = "catppuccin_mocha";
+          inherits = "catppuccin-mocha";
           ui.background = { };
         };
       };
