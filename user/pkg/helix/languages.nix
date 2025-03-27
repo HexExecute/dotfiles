@@ -45,6 +45,11 @@
       chktex.on_edit = true;
     };
 
+    language-server.rust_analyzer.config = {
+      check.command = "clippy";
+      completion.callable.snippets = "add_parentheses";
+    };
+
     language = [
       {
         name = "nix";
