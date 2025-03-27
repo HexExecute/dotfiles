@@ -29,7 +29,7 @@
       };
       themes = {
         catppuccin-mocha-transparent = {
-          inherits = "catppuccin-mocha";
+          inherits = "catppuccin_mocha";
           ui.background = { };
         };
       };
