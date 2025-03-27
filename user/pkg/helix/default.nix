@@ -21,10 +21,13 @@
       enable = true;
       settings = {
         theme = "catppuccin-mocha-transparent";
-        editor.cursor-shape = {
-          normal = "block";
-          insert = "bar";
-          select = "underline";
+        editor = {
+          smart-tab.enable = false;
+          cursor-shape = {
+            normal = "block";
+            insert = "bar";
+            select = "underline";
+          };
         };
       };
       themes = {
