@@ -34,18 +34,18 @@
     #config = { texlab = { build = { onSave = true, forwardSearchAfter = true }, forwardSearch = { executable = "zathura", args = [ "--synctex-forward", "%l:1:%f", "%p" ] }, chktex = { onEdit = true } } }   
     language-server.texlab.config = {
       build = {
-        on_save = true;
-        forward_search_after = true;
+        on-save = true;
+        forward-search-after = true;
       };
-      forward_search = {
+      forward-search = {
         executable = "zathura";
         args = [ "--syntex-forward" "%l:1:%f" "%p" ];
-        on_save = true;
+        on-save = true;
       };
-      chktex.on_edit = true;
+      chktex.on-edit = true;
     };
 
-    language-server.rust_analyzer.config = {
+    language-server.rust-analyzer.config = {
       check.command = "clippy";
       completion.callable.snippets = "add_parentheses";
     };

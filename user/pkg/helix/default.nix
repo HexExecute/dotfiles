@@ -9,8 +9,8 @@
     zathura = {
       enable = true;
       options = {
-        default_bg = config.theme.colors.surface;
-        default_fg = config.theme.colors.onSurface;
+        default-bg = config.theme.colors.surface;
+        default-fg = config.theme.colors.onSurface;
         recolor = true;
         recolor_lightcolor = config.theme.colors.surface;
         recolor_keephue = true;
@@ -21,14 +21,14 @@
       enable = true;
       settings = {
         theme = "catppuccin_mocha_transparent";
-        editor.cursor_shape = {
+        editor.cursor-shape = {
           normal = "block";
           insert = "bar";
           select = "underline";
         };
       };
       themes = {
-        catppuccin_mocha_transparent = {
+        catppuccin-mocha-transparent = {
           inherits = "catppuccin_mocha";
           ui.background = { };
         };
