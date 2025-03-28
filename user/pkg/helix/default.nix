@@ -28,8 +28,8 @@
             insert = "bar";
             select = "underline";
           };
+          lsp = { display-inlay-hints = true; };
         };
-        lsp = { display-inlay-hints = true; };
       };
       themes = {
         catppuccin-mocha-transparent = {
