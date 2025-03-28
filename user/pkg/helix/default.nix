@@ -22,13 +22,14 @@
       settings = {
         theme = "catppuccin-mocha-transparent";
         editor = {
-          smart-tab.enable = false;
+          soft-wrap.enable = true;
           cursor-shape = {
             normal = "block";
             insert = "bar";
             select = "underline";
           };
         };
+        lsp = { display-inlay-hints = true; };
       };
       themes = {
         catppuccin-mocha-transparent = {
