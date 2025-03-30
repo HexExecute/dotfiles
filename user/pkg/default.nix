@@ -2,7 +2,7 @@
   imports = [
     "${self}/user/pkg/alsa.nix"
     "${self}/user/pkg/anki.nix"
-    "${self}/user/pkg/ani-cli.nix"
+    "${self}/user/pkg/anicli.nix"
     "${self}/user/pkg/appimage.nix"
     "${self}/user/pkg/content.nix"
     "${self}/user/pkg/bottles.nix"
