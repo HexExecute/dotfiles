@@ -8,7 +8,7 @@
     dialect
     impression
     amberol
-    termusic
+    unstable.termusic
     authenticator
     video-trimmer
     wike
