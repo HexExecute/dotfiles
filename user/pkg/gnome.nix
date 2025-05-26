@@ -8,6 +8,7 @@
     dialect
     impression
     amberol
+    termusic
     authenticator
     video-trimmer
     wike
