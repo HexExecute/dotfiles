@@ -39,5 +39,6 @@
     hyprnome
     exhibit
     gnome-solanum
+    bluetui
   ];
 }
