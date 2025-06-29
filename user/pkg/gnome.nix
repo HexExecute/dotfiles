@@ -1,6 +1,6 @@
 { pkgs, unstable, ... }: {
   home.packages = with pkgs; [
-    gnome.gnome-calculator
+    gnome-calculator
     errands
     fragments
     gnome.nautilus
