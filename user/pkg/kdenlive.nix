@@ -1,1 +1,1 @@
-{ pkgs, ... }: { home.packages = with pkgs; [ kdenlive ]; }
+{ pkgs, ... }: { home.packages = with pkgs; [ kdePackages.kdenlive ]; }
