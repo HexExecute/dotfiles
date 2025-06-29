@@ -3,7 +3,7 @@
     gnome-calculator
     errands
     fragments
-    gnome.nautilus
+    nautilus
     emblem
     dialect
     impression
