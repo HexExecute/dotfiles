@@ -22,7 +22,7 @@
     parabolic
     unstable.rnote
     snapshot
-    gnome.gnome-clocks
+    gnome-clocks
     pika-backup
     # unstable.gnome-weather
     mousam
@@ -33,7 +33,7 @@
     resources
     impression
     hieroglyphic
-    gnome.gnome-calendar
+    gnome-calendar
     gnome-maps
     loupe
     hyprnome
