@@ -61,8 +61,8 @@
         name = "typescript";
         auto-format = true;
         formatter = {
-          command = "prettier";
-          args = [ "--stdin-filepath" "{}" ];
+          command = "dprint";
+          args = [ "fmt" "--stdin" "typescript" ];
         };
       }
       {
