@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  home.packages = with pkgs; [ steam adwsteamgtk cartridges ];
+  home.packages = with pkgs; [ steam adwsteamgtk cartridges vinegar rojo ];
 
   # roblox via sober
   # services.flatpak.packages = [{ appId = ""; }];
