@@ -27,6 +27,8 @@
         prepend /home/myuser/.apps |
         append /usr/bin/env
         )
+
+        source ~/.zoide.nu
       '';
       shellAliases = { edit = "hx"; };
     };
