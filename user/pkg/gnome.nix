@@ -40,5 +40,6 @@
     exhibit
     gnome-solanum
     bluetui
+    iamb
   ];
 }
