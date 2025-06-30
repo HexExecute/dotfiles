@@ -47,6 +47,14 @@
 
     language-server.rust-analyzer.config.check.command = "clippy";
 
+    language-server.typescript.config = {
+      documentFormatting = true;
+      languages.typescript = [{
+        formatCommand = "prettier --stdin-filepath ''\${INPUT}";
+        formatStdin = true;
+      }];
+    };
+
     language = [
       {
         name = "nix";
