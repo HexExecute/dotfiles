@@ -62,7 +62,7 @@
         auto-format = true;
         formatter = {
           command = "prettierd";
-          args = [ "--stdin-filepath" "{}" "--parser" "typescript"];
+          args = [ "--stdin-filepath" "{}" ];
         };
       }
       {
