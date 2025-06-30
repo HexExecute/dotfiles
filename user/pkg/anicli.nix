@@ -1,3 +1,3 @@
 { pkgs, ... }: {
-  home.packages = with pkgs; [ ani-cli zoxide bluetui iamb fzf ];
+  home.packages = with pkgs; [ ani-cli zoxide bluetui iamb fzf dua ];
 }
