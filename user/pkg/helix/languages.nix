@@ -61,7 +61,7 @@
         name = "typescript";
         auto-format = true;
         formatter = {
-          command = "prettierd";
+          command = "prettier";
           args = [ "--stdin-filepath" "{}" ];
         };
       }
