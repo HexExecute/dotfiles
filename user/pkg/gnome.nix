@@ -39,7 +39,5 @@
     hyprnome
     exhibit
     gnome-solanum
-    bluetui
-    iamb
   ];
 }
