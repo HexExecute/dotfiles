@@ -28,7 +28,7 @@
         append /usr/bin/env
         )
 
-        source ~/.zoide.nu
+        source ~/.zoxide.nu
       '';
       shellAliases = { edit = "hx"; };
     };
