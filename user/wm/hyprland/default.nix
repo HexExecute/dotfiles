@@ -131,7 +131,7 @@
       bindm = [ "$mod, mouse:272, movewindow" "$mod, mouse:273, resizewindow" ];
       # TODO: posy cursor
 
-      windowrule = [ "opacity 0.999 override, ^(firefox)$" ];
+      # windowrule = [ "opacity 0.999 override, ^(firefox)$" ];
 
       windowrulev2 = [
         "suppressevent maximize, class:.*"
