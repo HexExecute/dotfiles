@@ -1,1 +1,1 @@
-{ pkgs, unstable, ... }: { home.packages = [ unstable.planify ]; }
+{ pkgs, ... }: { home.packages = with pkgs; [ planify ]; }

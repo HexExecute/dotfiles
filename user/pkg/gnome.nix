@@ -1,7 +1,6 @@
 { pkgs, unstable, ... }: {
   home.packages = with pkgs; [
     gnome-calculator
-    planify
     fragments
     nautilus
     emblem
