@@ -1,1 +1,3 @@
-{ pkgs, ... }: { environment.systemPackages = with pkgs; [ usbutils ]; }
+{ pkgs, ... }: {
+  environment.systemPackages = with pkgs; [ usbutils brightnessctl ];
+}
