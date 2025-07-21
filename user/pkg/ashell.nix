@@ -1,1 +1,1 @@
-{ pkgs, ... }: { home.packages = with pkgs; [ ashell ]; }
+{ unstable, ... }: { home.packages = [ unstable.ashell ]; }
