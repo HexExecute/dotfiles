@@ -5,7 +5,9 @@
     turtle
     nautilus-python
     python313Packages.pygit2
-    python313Packages.pydbus
+    python313Packages.dbus-python
     python313Packages.secretstorage
+    python313Packages.pygobject3
+    meld
   ];
 }
